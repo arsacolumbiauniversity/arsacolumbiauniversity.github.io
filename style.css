@@ -1,1 +1,277 @@
+html, body{
+	height: 100%;
+	margin: 0px;
+}
 
+.container{
+	min-height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.back{
+	background: #A8C4DA;
+}
+
+.background{
+	background: url("images/back1.png") no-repeat;
+	background-size: cover;
+	height: 900px;
+	width: 100%;
+
+}
+/* ********************************************
+ *   NAV STYLES 
+ *********************************************/
+
+.nav-wrapper{
+	font-family: 'Teko', sans-serif;
+	overflow: auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 38px;
+}
+
+.left-side{
+	display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+	margin-right: 20px;
+	font-size: 2.1em;
+	text-transform: uppercase;
+}
+
+.nav-link-wrapper{
+	height: 22px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.3s;
+}
+
+.nav-link-wrapper a{
+	color: black;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+.nav-link-wrapper a:hover{
+	color: #E9E9E9;
+}
+
+.right-side{
+	font-size: 2em;
+	display: flex;
+	color: black;
+}
+
+
+/* ********************************************
+ *   CONTENT 
+ *********************************************/
+
+.content{
+	width: 100%
+	background: black;
+}
+
+.content h1{
+	margin-right: 0%;
+	font-family: 'Teko', sans-serif;
+	font-size: 70px;
+	font-weight: 999999;
+	color: black;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.content p{
+	text-align: justify;
+	font-size: 25px;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+
+
+
+/* ********************************************
+ *   MEMBERS STYLES 
+ *********************************************/
+.backgroundmembers{
+	background: url("images/members.jpg") no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+
+.members{
+	margin-left: 10%;
+	margin-right: 10%;
+	overflow: auto;
+	align-items: center;
+	text-align: center;
+}
+
+.members h1{
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.gallery{
+	display: inline-block;
+	background: white;
+	align-items: center;
+	box-shadow: 0 4px 12px -5px rgba(0,0,0,1);
+	text-align: center;
+	margin: 30px;
+	border: 1px solid #ccc;
+	width: 300px;
+}
+
+.gallery img{
+	align-items: center;
+	width: 100%;
+	height: 320px;
+}
+
+.description{
+	padding: 10px;
+	text-align: center;
+}
+
+.description h3{
+	font-family: 'Teko', sans-serif;
+	font-size: 30px;
+}
+
+
+/* ********************************************
+ *   EVENT STYLES 
+ *********************************************/
+.event-container{
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.event-container h3.year{
+	font-size: 40px;
+	text-align: center;
+	border-bottom: 1px solid #b1b1b1;
+}
+
+.event-container .event{
+	box-shadow: 0 4px 12px -5px rgba(0,0,0,1);
+	display: flex;
+	border-radius: 8px;
+	margin: 34px 0;
+}
+
+.event .event-left{
+	background: #2B70A4;
+	min-width: 89px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #eee;
+	padding: 8px 48px;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 8px 0 0 8px;
+}
+
+.event .event-left .date{
+	font-size: 60px;
+}
+
+.event .event-right{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 28px;
+}
+
+.event .event-right h3.event-title{
+	font-family: 'Teko', sans-serif;
+	font-size: 38px;
+	margin: 24px 0 10px 0;
+	color: #218bbb;
+	text-transform: uppercase;
+}
+
+.event .event-right .event-timing{
+	background: #DECA95;
+	display: flex;
+	align-items: left;
+	justify-content: left;
+	width: 123px;
+	padding: 8px;
+	border-radius: 16px;
+	margin: 24px 0px;
+	font-size: 14px;
+}
+
+.event .event-right .event-timing img{
+	height: 5px;
+	padding-right: 8px;
+}
+
+
+
+/* ********************************************
+ *   FOOTER 
+ *********************************************/
+
+.footer{
+	margin-top: 100px;
+	background: #2B70A4;
+	color: black;
+	height: 100px;
+	position: relative;
+}
+
+.footer .footer-content{
+	height: 100px;
+	display: flex;
+	margin-left: 2%;
+	margin-right: 0%;
+}
+
+.footer .footer-content .footer-section{
+	flex: 1;
+	padding: 25px;
+	color: white;
+}
+
+.footer .footer-content .about h3{
+	margin: -5px 0 0 0;
+	font-weight: 100;
+	font-size: 13px;
+}
+
+.footer .footer-content .about .socials a{
+	width: 45px;
+	height: 41px;
+	padding-top: 5px;
+	margin-right: 5px;
+	text-align: center;
+	display: inline-block;
+	font-size: 3em;
+	border-radius: 5px;
+	transition: all 0.3s;
+	position: relative;
+	color: #000066;
+	float: left;
+}
+
+.footer .footer-content .about .socials a:hover{
+	color: white;
+	transition: all 0.3s;
+}
+
+.footer .footer-content .logos .logocomp img{
+	display: inline-block;
+	float: right;
+	font-size: 3em;
+	position: relative;
+	height: 60px;
+}
